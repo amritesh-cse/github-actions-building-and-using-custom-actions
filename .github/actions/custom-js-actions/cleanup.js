@@ -3,7 +3,7 @@ import * as github from '@actions/github';
 import * as exec from '@actions/exec';
 
 function run() {
-    core.notice('Hello from my custom JavaScript Action - main.js');
+    core.notice('Hello from my custom JavaScript Action - cleanup.js');
 }
 
 run();
