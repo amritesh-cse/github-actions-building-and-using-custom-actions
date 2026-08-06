@@ -1,5 +1,5 @@
 name: 'Custom JavaScript Action'
 description: 'A JavaScript based custom GitHub Action'
 runs:
-  using: 'node16'
+  using: 'node24'
   main: main.js
