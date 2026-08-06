@@ -75,5 +75,4 @@ jobs:
         with:
           person: Aman
       - name: Output information
-        run: |
-          echo "Demo Output from local custom JavaScript action:: ${{ steps.javascript-action.outputs.demo-output }} "
+        run: echo "Demo Output from local custom JavaScript action- ${{ steps.javascript-action.outputs.demo-output }} "
