@@ -5,6 +5,7 @@ import * as exec from '@actions/exec';
 function run() {
     const person = core.getInput('person');
     core.notice('Hello ' + person + ' from my custom JavaScript Action - main.js');
+    core.setOutput('demo-output', 'Output 101')
 }
 
 run();

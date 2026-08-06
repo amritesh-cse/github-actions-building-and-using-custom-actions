@@ -70,6 +70,9 @@ jobs:
       - name: Get code
         uses: actions/checkout@v3
       - name: Run custom JavaScript action
+        id: javascript-action
         uses: ./.github/actions/custom-js-actions
         with:
           person: Aman
+      - name: Output information
+        run: echo "Demo Output from local custom JavaScript action:: ${{ steps.javascript-action.outputs.demo-output }} "

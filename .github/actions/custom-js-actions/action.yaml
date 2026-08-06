@@ -4,6 +4,9 @@ inputs:
   person:
     description: 'Name of a person.'
     required: true
+outputs:
+  demo-output:
+    description: 'Demo output from local custom JavaScript action.'
 runs:
   using: 'node24'
   main: main.js
