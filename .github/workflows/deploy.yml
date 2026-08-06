@@ -76,9 +76,11 @@ jobs:
           person: Aman
       - name: Output information local
         run: echo "Demo Output from local custom JavaScript action- ${{ steps.javascript-action.outputs.demo-output }} "
+      
       - name: Self published custom js action
-        uses: amritesh-cse/custom-javascript-action
+        id: self-published-js-action
+        uses: amritesh-cse/custom-js-actions@v1
         with:
           person: Raj
       - name: Output information marketplace
-        run: echo "Demo Output from self published custom JavaScript action- ${{ steps.javascript-action.outputs.demo-output }} "
+        run: echo "Demo Output from self published custom JavaScript action- ${{ steps.self-published-js-action.outputs.demo-output }} "
